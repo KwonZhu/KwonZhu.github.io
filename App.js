@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './Header';
-import Page from './Page';
-import Footer from './Footer';
+import Header from './app/Header';
+import Page from './app/Page';
+import Footer from './app/Footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -19,9 +19,8 @@ class App extends React.Component {
           <Page page={page} />
           <Footer />
         </div>
-
       </div>
-    )
+    );
   }
 }
 export default App;
