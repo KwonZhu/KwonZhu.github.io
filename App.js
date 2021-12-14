@@ -16,7 +16,7 @@ class App extends React.Component {
       <div  className="main">
         <div className="container">
           <Header page={page} />
-          <Page page={page} />
+          {/* <Page page={page} /> */}
           <Footer />
         </div>
       </div>
