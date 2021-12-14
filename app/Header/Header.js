@@ -23,29 +23,31 @@ const Right = styled.div`
 
 const Header = ({
   page,
+  onPageChange,
 }) => {
   const navbarItems = [
     { key: 'HOME', value: 'Home' },
     { key: 'RESUME', value: 'Resume' },
     { key: 'SERVICES', value: 'Services' },
-    { key: 'CONTACT', value: 'Contact' }
+    { key: 'CONTACT', value: 'Contact' },
   ];
 
   return (
     <Nav>
-       <Left>
+        <Left>
           <Logo>
             <Highlight>Kwon</Highlight>
-                       Zhu
+            Zhu
           </Logo>
         </Left>
         <Right>
           <Flex>
             {navbarItems.map((navbarItem) =>(
               <NavbarItem
-                key = { navbarItem.key } //to solve Each child in a list should have a unique "key" prop
-                active = { page === navbarItem.key} //pass active page as props to NavbarItem.js
-                hre = { page === navbarItem.key }
+                key={navbarItem.key} //to solve Each child in a list should have a unique "key" prop
+                active={page === navbarItem.key} //pass active page as props to NavbarItem.js
+                hre={page === navbarItem.key}
+                onClick={() => onPageChange(navbarItem.key)}
               >
                 {navbarItem.value}
               </NavbarItem>

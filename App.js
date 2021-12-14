@@ -9,13 +9,24 @@ class App extends React.Component {
     this.state = {
       page: 'Home'
     };
+    //bind this
+    this.handlePageChange = this.handlePageChange.bind(this);
   }
+
+  //custom function
+  handlePageChange(newPage){
+    this.setState({page: newPage});
+  }
+
   render() {
     const { page } = this.state;
     return (
       <div  className="main">
         <div className="container">
-          <Header page={page} />
+          <Header 
+            page={page}
+            onPageChange={this.handlePageChange} //pass custom function to Header.js
+          />
           {/* <Page page={page} /> */}
           <Footer />
         </div>
