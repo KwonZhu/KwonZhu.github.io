@@ -7,7 +7,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      page: 'Home'
+      page: 'Home',
     };
     //bind this
     this.handlePageChange = this.handlePageChange.bind(this);
@@ -27,7 +27,7 @@ class App extends React.Component {
             page={page}
             onPageChange={this.handlePageChange} //pass custom function to Header.js
           />
-          {/* <Page page={page} /> */}
+          <Page page={page} />
           <Footer />
         </div>
       </div>
