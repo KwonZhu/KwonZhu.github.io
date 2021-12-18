@@ -44,17 +44,17 @@ const ResumePage = () => (
           <h3 className="resumeSub__title">Experience</h3>
           <div className="timelines">
             <div className="timeline">
-              <h4 className="experience__title">Specialization Course</h4>
+              <h4 className="experience__title">Business-like project</h4>
               <div className="experience__meta">
-                <span className="experience__year">2010</span>
+                <span className="experience__year">Aug 2021 - Present</span>
                 &nbsp;
                 <i className="experience__divider"></i>
                 &nbsp;
-                <span className="experience__company">Apple Inc.</span>
+                <span className="experience__company">Full stack Developer</span>
               </div>
               <div className="experience__description">
-                Mauris magna sapien, pharetra consectetur fringilla vitae,
-                interdum sed tortor.
+                <li>Personal website</li>
+                <li>Weather app</li>
               </div>
             </div>
             <div className="timeline">
