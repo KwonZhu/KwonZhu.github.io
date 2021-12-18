@@ -22,11 +22,7 @@ const ServicesPage = () => (
           </div>
           <div className="serviceItem">
             <div className="serviceItem__imageContainer">
-              <img
-                alt="UI Design"
-                src="./assets/css3.png"
-                className="serviceItem__image"
-              ></img>
+              <img alt="UI Design" src="" className="serviceItem__image"></img>
             </div>
             <h4 className="serviceItem__name">UI Design</h4>
             <div className="serviceItem__description">
@@ -39,7 +35,7 @@ const ServicesPage = () => (
             <div className="serviceItem__imageContainer">
               <img
                 alt="More to come"
-                src="./assets/js.png"
+                src=""
                 className="serviceItem__image"
               ></img>
             </div>
