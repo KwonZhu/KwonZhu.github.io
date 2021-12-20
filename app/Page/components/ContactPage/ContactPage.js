@@ -56,7 +56,7 @@ const ContactPage = () => (
                 name="message"
                 placeholder="Massage for Me"
                 required
-                rows="5"
+                rows="10"
               ></textarea>
             </div>
             <input
